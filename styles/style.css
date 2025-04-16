@@ -1,9 +1,14 @@
 .page {
   font-family: var(--main-text), monospace;
-  background:var(--bg-main-color) var(--bg-image) no-repeat center/cover;
+  background-color: var(--bg-main-color);
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-attachment: fixed;
   min-inline-size: 375px;
 }
+
 
 /* Заголовок */
 
@@ -255,7 +260,6 @@
   .header {
     grid-template-rows: 28% 27% 42.4%;
     min-block-size: 1024px;
-    block-size: 100vh;
   }
 
   .decorated-zone::after {
@@ -325,7 +329,6 @@
 
   .gallery_list {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 192px 230px 318px;
     gap: 20px;
   }
 
@@ -350,7 +353,6 @@
 
   .footer {
     min-block-size: 1024px;
-    block-size: 100vh;
   }
 }
 
